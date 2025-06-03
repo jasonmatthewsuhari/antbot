@@ -1,0 +1,10 @@
+# just based on my exp, feel free to use whatveer you guys are comfy with!
+
+fastapi # backend for hosting the chatbot
+uvicorn # run backend
+sentence-transformers # make embed
+faiss-cpu # store embed
+streamlit # dashboaridng
+
+# as for ollama installation can ref to https://ollama.com/download
+# if u guys haven't used, feel free to use any model as long as it's decently lightweight
