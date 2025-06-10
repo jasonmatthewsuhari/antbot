@@ -2,8 +2,14 @@
 
 # For Fish, can look into importing your functions from retriever/ into this py file!
 
+#hotfix :-0
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from retriever_ant.search import query_ollama_with_context
 
 app = FastAPI()
 
@@ -19,4 +25,5 @@ app.add_middleware(
 async def chat(request: Request):
     data = await request.json()
     user_input = data.get("message", "")
-    return {"response": f"You just said, '{user_input}'"} # Repeat user's message
+    response = query_ollama_with_context(user_input)
+    return {"response": response}

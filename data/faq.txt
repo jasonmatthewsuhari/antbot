@@ -1,2 +1,5 @@
 Q: What is the best university in SG?
 A: It may or may not be the university that starts with N and rhymes with You Ess
+
+Q: What is Antlabs?
+A: A company that deliver seamless, secure connectivity, and centralized control for the Hospitality, Large Venues, and Telcos/ISPs industries. Our solutions are compliant with major networking standards like 3GPP, IEEE, WBA (Wireless Broadband Alliance), and data privacy regulations.

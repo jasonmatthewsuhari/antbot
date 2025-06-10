@@ -5,7 +5,7 @@ import pickle
 import re
 import os
 
-def generate_faq_embeddings(faq_path="faq.txt", output_path="faq_embeddings.pkl"):
+def generate_faq_embeddings(faq_path="data/faq.txt", output_path="faq_embeddings.pkl"):
     # 1: Read and parse faq.txt
     if not os.path.exists(faq_path):
         raise FileNotFoundError(f"❌ File not found: {faq_path}")

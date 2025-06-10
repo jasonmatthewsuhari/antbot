@@ -1,5 +1,8 @@
 # Search logic (Fish)
 
+#hotfix :)
+import sys
+import os
 import pickle
 import numpy as np
 from sentence_transformers import SentenceTransformer
@@ -11,7 +14,8 @@ import os
 MODEL_NAME = "all-MiniLM-L6-v2"
 OLLAMA_API = "http://localhost:11434/api/generate"
 OLLAMA_MODEL = "llama3"
-EMBEDDINGS_FILE = "faq_embeddings.pkl"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+EMBEDDINGS_FILE = os.path.join(BASE_DIR, "faq_embeddings.pkl")
 
 # === Load Model and Embeddings Once ===
 model = SentenceTransformer(MODEL_NAME)
